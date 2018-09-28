@@ -18,4 +18,5 @@ def assign_rooms(attendees)
   attendees.each_char_with_index  do |attendee,index|
       hash[attendee] = index
       return "Hello, #{attendee}! You'll be assigned to room #{index}!"
+    end
 end
