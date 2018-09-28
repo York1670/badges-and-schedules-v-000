@@ -17,5 +17,5 @@ def assign_rooms(attendees)
   room_assignments = "Hello, #{attendee}! You'll be assigned to room #{index +1}"
   attendees.each_with_index {|attendee,index|
       hash[attendee] = index}
-      return room_assignments
+      return room_assignments << hash
 end
