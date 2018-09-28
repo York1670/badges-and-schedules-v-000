@@ -13,9 +13,8 @@ def batch_badge_creator(attendees)
 end
 
 def assign_rooms(attendees)
-  hash = Hash.new
   room_assignments = "Hello, #{attendee}! You'll be assigned to room #{index +1}"
-  attendees.each_with_index {|attendee,index|
+  attendees.each.with_index(1) do |attendee,index|
       hash[attendee] = index}
       room_assignments << hash
       return room_assignments
